@@ -2,12 +2,11 @@
 
 import Container from "../components/Layouts/Container";
 import Grid from "../components/Layouts/Grid";
+import { getAlbums } from "../libs/data";
 
 export default function Discography() {
 
-  const albums = [
-    { title: "Lineage", link: "https://soundcloud.com/indetonos/sets/lineage-6?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing", img: "/lineage.jpg", listeneable: "listeneable", year:"2019" },
-  ];
+  const albums = getAlbums();
 
   const discographyPage = () => {
 
